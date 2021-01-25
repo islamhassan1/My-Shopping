@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#5AFF3D',
+    color: '#EA2027',
   },
   container: {
     textAlign: 'center',
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '4.5rem',
   },
   goDown: {
-    color: '#5AFF3D',
+    color: '#EA2027',
     fontSize: '4rem',
   },
 }));
@@ -61,7 +61,7 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             My<span className={classes.colorText}>Shopping</span>
           </h1>
-          <Button color="inherit" style={{background: "#5AFF3D"}}>Login</Button>
+          <Button color="inherit" style={{background: "#EA2027"}}>Login</Button>
             <IconButton color="primary" aria-label="add to shopping cart" className={classes.icon}>
               <AddShoppingCartIcon />
             </IconButton>
