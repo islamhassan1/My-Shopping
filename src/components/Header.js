@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
@@ -8,6 +8,8 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Button from '@material-ui/core/Button';
 import { green, red } from '@material-ui/core/colors';
 import { SignalWifi1BarLock } from '@material-ui/icons';
+import { FaBars } from 'react-icons/fa';
+import { AppContext, useGlobalContext } from '../context';
 
 
 
@@ -54,6 +56,9 @@ export default function Header() {
   useEffect(() => {
     setChecked(true);
   }, []);
+
+  const {openSidebar, openModal} = useGlobalContext();
+  
   return (
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
@@ -61,12 +66,14 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             My<span className={classes.colorText}>Shopping</span>
           </h1>
-          <Button color="inherit" style={{background: "#EA2027"}}>Login</Button>
+          <Button onClick={openModal} className='btn' color="inherit" style={{background: "#EA2027"}}>Login</Button>
             <IconButton color="primary" aria-label="add to shopping cart" className={classes.icon}>
               <AddShoppingCartIcon />
             </IconButton>
           <IconButton>
-            <SortIcon className={classes.icon} />
+            <button onClick={openSidebar} className={classes.icon} style={{background: "none", border: "none", fontSize: "1.7rem", cursor: "pointer" }}>
+              <FaBars />
+            </button>
           </IconButton>
         </Toolbar>
       </AppBar>
