@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
-import Header from './components/Header';
-import PlaceToVisit from './components/PlaceToVisit';
-import Sidbar from './components/Sidebar';
-import Modal from './components/Modal';
 import Categories from './components/Categories';
+import Header from './components/Header';
 import Menu from './components/Menu';
+import Modal from './components/Modal';
+import PlaceToVisit from './components/PlaceToVisit';
+import Review from './components/Review';
+import Sidbar from './components/Sidebar';
+
+
 import items from './data';
 const allCategories = ['all', ...new Set(items.map((item) => item.category))];
 
@@ -48,6 +51,14 @@ export default function App() {
         <Menu items={menuItems} />
       </section>
     </main>
+
+    <section className='container'>
+        <div className='title'>
+          <h2>Our reviews</h2>
+          <div className='underline'></div>
+        </div>
+        <Review />
+      </section>
       
     </div>
   );

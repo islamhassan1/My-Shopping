@@ -104,7 +104,7 @@ const menu = [
     title: 'Men suit',
     category: 'Men',
     price: 15.99,
-    img: '/src/components/img/item-1.jpg',
+    img: 'https://images.pexels.com/photos/1342609/pexels-photo-1342609.jpeg?cs=srgb&dl=pexels-the-lazy-artist-gallery-1342609.jpg&fm=jpg',
     desc: `Charcoal grey solid formal suit
     Charcoal grey solid super slim-fit formal blazer, has a notched lapel, single-breasted with double button closures `,
   },
@@ -113,7 +113,7 @@ const menu = [
     title: 'Women Green Top',
     category: 'Woman',
     price: 13.99,
-    img: '/src/components/img/item-4.jpg',
+    img: 'https://images.pexels.com/photos/3767410/pexels-photo-3767410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Green embroidered regular top and has a round neck, three quarter sleeves . `,
   },
   {
@@ -121,7 +121,7 @@ const menu = [
     title: 'Boys T-shirts',
     category: 'Kids',
     price: 6.99,
-    img: '/src/components/img/item-7.jpg',
+    img: 'https://images.pexels.com/photos/4712012/pexels-photo-4712012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Pack of five knitted T-shirts in red, green, blue, green, white and black, has a contrast ribbed round neck, short sleeves with contrast ribbed cuffs, graphic print on the front, straight hem.`,
   },
   {
@@ -129,7 +129,7 @@ const menu = [
     title: 'Men sweatshirt',
     category: 'Men',
     price: 20.99,
-    img: '/src/components/img/item-2.jpg',
+    img: 'https://images.pexels.com/photos/1706910/pexels-photo-1706910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Mustard yellow printed pullover sweatshirt, has a hood, two pockets, long sleeves, straight hem . `,
   },
   {
@@ -137,7 +137,7 @@ const menu = [
     title: 'Women Jacket',
     category: 'Woman',
     price: 22.99,
-    img: '/src/components/img/item-5.jpg',
+    img: 'https://images.pexels.com/photos/6530732/pexels-photo-6530732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Maroon solid quilted jacket, has a stand collar, 2 pockets, zip closure, long sleeves, straight hem, and polyester lining .`,
   },
   {
@@ -145,7 +145,7 @@ const menu = [
     title: 'Girls Dress',
     category: 'Kids',
     price: 18.99,
-    img: '/src/components/img/item-8.jpg',
+    img: 'https://images.pexels.com/photos/189857/pexels-photo-189857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Peach-Coloured printed woven fit and flare dress, has a round neck, short sleeves, concealed zip closure, and flared hem .`,
   },
   {
@@ -153,7 +153,7 @@ const menu = [
     title: 'Men jeans jacket',
     category: 'Men',
     price: 8.99,
-    img: '/src/components/img/item-3.jpg',
+    img: 'https://images.pexels.com/photos/6273203/pexels-photo-6273203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Blue solid jacket, has a stand collar, 4 pockets, zip closure, long sleeves, straight hem, and unlined .`,
   },
   {
@@ -161,7 +161,7 @@ const menu = [
     title: 'Women T-shirt',
     category: 'Woman',
     price: 12.99,
-    img: '/src/components/img/item-6.jpg',
+    img: 'https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     desc: `Yellow and Beige printed T-shirt, has a round neck, and short sleeves .  `,
   },
   {
@@ -169,9 +169,60 @@ const menu = [
     title: 'Kids Jacket',
     category: 'Kids',
     price: 16.99,
-    img: '/src/components/img/item-10.jpg',
+    img: 'https://images.pexels.com/photos/3934003/pexels-photo-3934003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     desc: `Purple and Red printed jacket, has a hooded, 2 pockets, zip closure, long sleeves, straight hem, and polyester lining .`,
   },
 ];
 
+
+
+/* Reviews*/
+
+const reviews = [
+  {
+    id: 1,
+    name: 'susan smith',
+    job: 'web developer',
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+    text:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+  },
+  {
+    id: 2,
+    name: 'anna johnson',
+    job: 'web designer',
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
+    text:
+      'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+  },
+  {
+    id: 3,
+    name: 'peter jones',
+    job: 'intern',
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
+    text:
+      'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+  },
+  {
+    id: 4,
+    name: 'bill anderson',
+    job: 'the boss',
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
+    text:
+      'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+  },
+];
+
+
+/*export default reviews;
 export default menu;
+*/
+
+
+export default {menu, reviews };
+
+
