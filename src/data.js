@@ -186,7 +186,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
     text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+      "Have bought two sets of these in the last week or two, ‘sold and despatched by Amazon’. 100% real, comfortable and fit exactly as expected (size Medium, 32/33” waist). Only gripe is the price fluctuates but can still be found cheaper on the high street so do your research and you can pay £26 for a 3 pack on the high street",
   },
   {
     id: 2,
@@ -195,7 +195,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
     text:
-      'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+      'As the title mentions I was sceptical of the price however a quick email to CK cleared out any doubts. They said they can guarantee that CK products sold directly by Amazon are legitimate and you dont need to worry about them being counterfeit.',
   },
   {
     id: 3,
@@ -204,7 +204,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
     text:
-      'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+      'These are not fake! I bought these for my husband; then read the reviews ( as you do.) concerned that they had been branded as fake I bought the next lot directly from Calvin Klein ( the company, not himself!) They were exactly the same in every way. So this product is the real deal and it’s so disappointing that some are saying otherwise.',
   },
   {
     id: 4,
@@ -213,7 +213,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
     text:
-      'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+      'My husband has been doing kung fu, thai chi and yoga for nearly a year now. Ive been noticing how much fitter he looks and orderd him these fantastic pants to show off his new figure...Straight away, he said...Theyll never fit, theyre far too small!! .',
   },
 ];
 
