@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: '#fff',
-    fontSize: '2rem',
+    fontSize: '1rem',
   },
   colorText: {
     color: '#EA2027',
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     color: '#fff',
-    fontSize: '4.5rem',
+    fontSize: '3.5rem',
   },
   goDown: {
     color: '#EA2027',

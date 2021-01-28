@@ -133,29 +133,30 @@ Sidebar
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 1.5rem;
+	padding: 1rem .3rem;
 }
 .close-btn {
-	font-size: 1.75rem;
+	font-size: 1.2rem;
 	background: transparent;
 	border-color: transparent;
 	color: var(--clr-primary-5);
 	transition: var(--transition);
 	cursor: pointer;
 	color: var(--clr-red-dark);
-	margin-top: 0.2rem;
 }
 .close-btn:hover {
 	color: var(--clr-red-light);
 	cursor: pointer;
 }
-
+.links {
+	margin-top: -50px;
+}
 .links a {
 	display: flex;
 	align-items: center;
-	font-size: 1.25rem;
+	font-size: .9rem;
 	text-transform: capitalize;
-	padding: 1rem 1.5rem;
+	padding: .5rem .5rem;
 	color: red;
 	transition: var(--transition);
 	letter-spacing: var(--spacing);
@@ -217,13 +218,13 @@ Sign-in-Sign-up-Form
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 .modal-container {
 	bottom: 15%;
-	height: 200px;
+	height: 150px;
 }
 .container {
 	position: relative;
 	width: 100%;
 	background-color: #fff;
-	height: 500px;
+	height: 350px;
 	overflow: hidden;
 }
 
@@ -237,10 +238,10 @@ Sign-in-Sign-up-Form
 
 .signin-signup {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	transform: translate(-50%, -50%);
 	left: 75%;
-	width: 50%;
+	width: 40%;
 	transition: 1s 0.7s ease-in-out;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -271,15 +272,14 @@ form.sign-in-form {
 .title {
 	font-size: 1.5rem;
 	color: #ea0609;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .input-field {
-	max-width: 380px;
-	width: 100%;
+	max-width: 250px;
 	background-color: #f0f0f0;
 	margin: 10px 0;
-	height: 55px;
+	height: 50px;
 	border-radius: 55px;
 	display: grid;
 	grid-template-columns: 15% 85%;
@@ -311,7 +311,7 @@ form.sign-in-form {
 }
 
 .social-text {
-	padding: 0.7rem 0;
+	padding: 0rem 0;
 	font-size: 1rem;
 }
 
@@ -321,8 +321,8 @@ form.sign-in-form {
 }
 
 .social-icon {
-	height: 46px;
-	width: 46px;
+	height: 26px;
+	width: 26px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -331,7 +331,7 @@ form.sign-in-form {
 	border-radius: 50%;
 	border: 1px solid #333;
 	text-decoration: none;
-	font-size: 1.1rem;
+
 	transition: 0.3s;
 }
 
@@ -341,17 +341,17 @@ form.sign-in-form {
 }
 
 .btn {
-	width: 150px;
+	width: 50px;
 	background-color: #ea0609;
 	border: none;
 	outline: none;
-	height: 45px;
+	height: 30px;
 	border-radius: 49px;
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 600;
-	margin: 10px 0;
+	margin: 1px;
 	cursor: pointer;
+	font-size: .6rem;
 	transition: 0.5s;
 }
 
@@ -368,7 +368,7 @@ form.sign-in-form {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.container:before {
+/* .container:before {
 	content: "";
 	position: absolute;
 	height: 2000px;
@@ -380,7 +380,7 @@ form.sign-in-form {
 	transition: 1.8s ease-in-out;
 	border-radius: 50%;
 	z-index: 6;
-}
+} */
 
 .image {
 	width: 100%;
@@ -618,6 +618,7 @@ Menu
 	background-position: center left;
 	background-size: auto;
 	margin-top: -10px;
+	height: 2300px;
 }
 .title {
 	text-align: center;
@@ -657,7 +658,7 @@ Menu
 	color: var(--clr-white);
 }
 .section-center {
-	width: 90vw;
+	width: 70vw;
 	margin: 0 auto;
 	max-width: 1170px;
 	display: grid;
@@ -720,24 +721,32 @@ Reviews
 ===============
 */
 
-.title {
+.title-rev {
 	text-align: center;
 	margin-bottom: 4rem;
+	font-size: 1rem;
+	color: red;
 }
-.underline {
+.title-rev h2 {
+	font-size: 1.5rem;
+}
+.underline-rev {
 	height: 0.25rem;
 	width: 5rem;
-	background: var(--clr-primary-5);
+	background: red;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
-.container {
-	width: 80vw;
-	max-width: var(--fixed-width);
+.container-rev {
+	text-align: center;
+	left: 50%;
 }
 .review {
+	width: 50%;
+	margin: 2rem 16rem;
 	background: var(--clr-white);
-	padding: 1.5rem 2rem;
+	padding: 2.5rem 2rem;
 	border-radius: var(--radius);
 	box-shadow: var(--light-shadow);
 	transition: var(--transition);
@@ -746,7 +755,7 @@ Reviews
 .review:hover {
 	box-shadow: var(--dark-shadow);
 }
-.img-container {
+.img-container-rev {
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -754,7 +763,7 @@ Reviews
 	margin: 0 auto;
 	margin-bottom: 1.5rem;
 }
-.person-img {
+.person-img-rev {
 	width: 100%;
 	display: block;
 	height: 100%;
@@ -762,7 +771,7 @@ Reviews
 	border-radius: 50%;
 	position: relative;
 }
-.quote-icon {
+.quote-icon-rev {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -775,7 +784,7 @@ Reviews
 	background: var(--clr-primary-5);
 	color: var(--clr-white);
 }
-.img-container::before {
+.img-container-rev::before {
 	content: '';
 	width: 100%;
 	height: 100%;
@@ -785,16 +794,17 @@ Reviews
 	right: -0.5rem;
 	border-radius: 50%;
 }
-.author {
+.author-rev {
 	margin-bottom: 0.25rem;
 }
-.job {
+.job-rev {
 	margin-bottom: 0.5rem;
 	text-transform: uppercase;
 	color: var(--clr-primary-5);
 	font-size: 0.85rem;
+	font-weight: bold;
 }
-.info {
+.info-rev {
 	margin-bottom: 0.75rem;
 }
 .prev-btn,
@@ -824,5 +834,5 @@ Reviews
 }
 .random-btn:hover {
 	background: var(--clr-primary-5);
-	color: var(--clr-primary-1);
+	color: white;
 }

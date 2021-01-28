@@ -223,6 +223,6 @@ export default menu;
 */
 
 
-export default {menu, reviews };
+export  {menu, reviews };
 
 

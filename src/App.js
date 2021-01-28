@@ -8,10 +8,10 @@ import Modal from './components/Modal';
 import PlaceToVisit from './components/PlaceToVisit';
 import Review from './components/Review';
 import Sidbar from './components/Sidebar';
+import { menu as items } from './data';
 
-
-import items from './data';
 const allCategories = ['all', ...new Set(items.map((item) => item.category))];
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,16 +49,18 @@ export default function App() {
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={menuItems} />
+        
       </section>
-    </main>
-
-    <section className='container'>
-        <div className='title'>
+      <section className='container-rev'>
+        <div className='title-rev'>
           <h2>Our reviews</h2>
-          <div className='underline'></div>
+          <div className='underline-rev'></div>
         </div>
         <Review />
       </section>
+    </main>
+   
+    
       
     </div>
   );

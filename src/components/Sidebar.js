@@ -4,12 +4,12 @@ import { social, links } from '../data'
 import {  useGlobalContext } from '../context';
 
 const Sidebar = () => {
-    const {isSidebarOpen, CloseSidebar} = useGlobalContext();
+    const {isSidebarOpen, closeSidebar} = useGlobalContext();
 
     return (
         <aside className={`${isSidebarOpen?' sidebar show-sidebar ':' sidebar ' } `}>
             <div className="sidebar-header">
-                <button className='close-btn' onClick={CloseSidebar} >
+                <button className='close-btn' onClick={closeSidebar} >
                     <FaTimes />
                 </button>
             </div>

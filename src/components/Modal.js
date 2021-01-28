@@ -2,7 +2,6 @@ import React from 'react'
 import { FaTimes } from "react-icons/fa";
 import {  useGlobalContext } from '../context';
 
-
 function Modal() {
   const {isModalOpen, closeModal} = useGlobalContext();
     return (
@@ -12,7 +11,8 @@ function Modal() {
             <button  className='close-modal-btn' onClick={closeModal}>
           <FaTimes />
         </button>
-      <div class="forms-container">
+       
+        <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
             <h2 class="title">Sign in</h2>
@@ -104,6 +104,7 @@ function Modal() {
     </div>
             </div>
         </div>  
+        
     )
     const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
@@ -119,4 +120,3 @@ sign_up_btn.addEventListener("click", () => {
 }
 
 export default Modal
-
