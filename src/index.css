@@ -368,7 +368,7 @@ form.sign-in-form {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-/* .container:before {
+.container:before {
 	content: "";
 	position: absolute;
 	height: 2000px;
@@ -380,7 +380,7 @@ form.sign-in-form {
 	transition: 1.8s ease-in-out;
 	border-radius: 50%;
 	z-index: 6;
-} */
+}
 
 .image {
 	width: 100%;
@@ -835,4 +835,108 @@ Reviews
 .random-btn:hover {
 	background: var(--clr-primary-5);
 	color: white;
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+
+.footer {
+	background-color: rgba(7, 7, 7, 0.966);
+	color: white;
+	padding: 2.5rem;
+	text-align: center;
+
+	&__logo {
+		display: inline-block;
+		color: red;
+
+		a {
+			display: inline-block;
+			height: 1.25rem;
+
+			svg path {
+				transition: fill 150ms ease-in-out;
+			}
+
+			&:hover svg path {
+				fill: $limeGreen;
+			}
+		}
+
+		a:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 0.9375rem;
+
+		a {
+			line-height: 2.25;
+			transition: color 150ms ease-in-out;
+
+			&:hover {
+				color: $limeGreen;
+			}
+		}
+	}
+}
+
+a h1 {
+	color: red;
+	margin-bottom: 3rem;
+}
+
+.footer__social {
+	margin: 1rem;
+}
+
+.footer__social a {
+	padding: 1rem;
+}
+
+.col1 {
+	margin: .5rem;
+}
+
+.col1 a {
+	color: white;
+	margin: .5rem;
+}
+.col1 a:hover {
+	color: red;
+}
+.col2 a {
+	color: white;
+	margin: .5rem;
+}
+.col2 a:hover {
+	color: red;
+}
+
+.footer__cta {
+	margin: 1rem;
+}
+
+.footer__cta button {
+	border: none;
+	border-radius: 5%;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+}
+
+.footer__cta button:hover {
+	background-color: white;
+	color: red;
+}
+
+.footer__cta button {
+	padding: .5rem;
 }

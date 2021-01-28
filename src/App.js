@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Categories from './components/Categories';
+import Footer from './components/footer';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Modal from './components/Modal';
@@ -61,7 +62,7 @@ export default function App() {
     </main>
    
     
-      
+      <Footer />
     </div>
   );
 }
